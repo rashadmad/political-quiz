@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="assets/css/user.css">
     <link rel="stylesheet" href="assets/bootstrap/fonts/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/quiz.js"></script>
 </head>
 
 <body>
@@ -30,217 +32,230 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center">Political Ideology Test</h1></div>
-            </div>
+                    <h1 class="text-center">Political Ideology Test</h1>
+                  </br>
+                </div>
+              </div>
+                    <p class="lead center-block text-center">If your intrested in learning more about politics and also about your self your in the right place. Though this test is for fun it will teach you a bit about government, its purpose and whether its nessary.</p>
+
         </div>
     </div>
     <section>
+        <form id="quizForm" name="quizForm" ACTION="" METHOD="GET">
         <div class="container">
-            <div class="row question">
+          <div class="input-group row question">
+              <span class="input-group-addon" id="basic-addon1">Tell us your name</span>
+              <input type="text" class="form-control"  name="userName" placeholder="Name">
+          </div>
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>Do you believe goverment is necessary?</h2>
+                    <h2>1.Do you believe goverment is necessary?</h2>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-info" type="button">yes </button>
-                        <button class="btn btn-info" type="button">no </button>
+                        <input name="q1" class="btn btn-info" type="button" value="yes" onClick=0 ></input>
+                        <input name="q1" class="btn btn-info" type="button" value="no" onClick=0 ></input>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>Should government have complete control over its subjects?</h2>
+                    <h2>2.Should government have complete control over its subjects?</h2>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-info" type="button">yes </button>
-                        <button class="btn btn-info" type="button">no </button>
+                        <input name="q2" class="btn btn-info" type="button" value="yes" onClick=0 ></input>
+                        <input name="q2" class="btn btn-info" type="button" value="no" onClick=0 ></input>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>If you ruled a country would you allow an election that could end your rule?</h2>
+                  <div class="card card-block">
+                    <h2>3.If you ruled a country would you allow an election that could end your rule?</h2>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-info" type="button">yes </button>
-                        <button class="btn btn-info" type="button">no </button>
+                        <input name="q3" class="btn btn-info" type="button" value="yes" onClick=0 ></input>
+                        <input name="q3" class="btn btn-info" type="button" value="no" onClick=0 ></input>
                     </div>
+                  </div>
                 </div>
             </div>
-            <div class="row question">
+
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>If you ruled a country would you allow an election that could end your rule?</h2>
+                    <h2>4.If you ruled a country would you allow an election that could end your rule?</h2>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-info" type="button">yes </button>
-                        <button class="btn btn-info" type="button">no </button>
+                        <input name="q4" class="btn btn-info" type="button" value="yes" onClick=0 ></input>
+                        <input name="q4" class="btn btn-info" type="button" value="no" onClick=0 ></input>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>What Role should a government play in society?</h2>
+                    <h2>5.What Role should a government play in society?</h2>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">To up-hold peoples traditions.</label>
+                            <input type="radio" name="q5" onClick=0 >To up-hold peoples traditions.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">To sustain balance between the haves and have nots.</label>
+                            <input type="radio" name="q5" onClick=0 >To sustain balance between the haves and have nots.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">To have some input and resposibility in all that goes on In its subject's lives.</label>
+                            <input type="radio" name="q5" onClick=0 >To have some input and resposibility in all that goes on In its subject's lives.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">To have as little effect on peoples lives as possible.</label>
+                            <input type="radio" name="q5" onClick=0 >To have as little effect on peoples lives as possible.</label>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>Should government have a say In a families traditions?</h2>
+                    <h2>6.Should government have a say In a families traditions?</h2>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">A little say helps protect traditions.</label>
+                            <input type="radio" name="q6" onClick=0 >A little say helps protect traditions.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">A little say helps protect traditions.</label>
+                            <input type="radio" name="q6" onClick=0 >A little say helps protect traditions.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">People need government to keep them honest to there traditions.</label>
+                            <input type="radio" name="q6" onClick=0 >People need government to keep them honest to there traditions.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">government should not have any connection with peoples traditions.</label>
+                            <input type="radio" name="q6" onClick=0 >government should not have any connection with peoples traditions.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">government should protect peoples tradtions but not enforce them.</label>
+                            <input type="radio" name="q6" onClick=0 >government should protect peoples tradtions but not enforce them.</label>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>Do you think amatuer sports need referees? </h2>
+                    <h2>7.Do you think amatuer sports need referees? </h2>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">No, men our honest and can agree to do there best to admit to there mistakes.</label>
+                            <input type="radio" name="q7" onClick=0 >No, men our honest and can agree to do there best to admit to there mistakes.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group"> Yes, It helps to have them because arguments can get out of hand.</label>
+                            <input type="radio" name="q7" onClick=0 > Yes, It helps to have them because arguments can get out of hand.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">Yes, but they need to be monitored by an unbiased orginization.</label>
+                            <input type="radio" name="q7" onClick=0 >Yes, but they need to be monitored by an unbiased orginization.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">No. If there are spectators around</label>
+                            <input type="radio" name="q7" onClick=0 >No. If there are spectators around</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">government should protect peoples tradtions but not enforce them.</label>
+                            <input type="radio" name="q7" onClick=0 >government should protect peoples tradtions but not enforce them.</label>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>Do you really think all pro-sports need referees? </h2>
+                    <h2>8.Do you really think all pro-sports need referees? </h2>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">They just adjust to what the people want with out question.</label>
+                            <input type="radio" name="q8" onClick=0 >They just adjust to what the people want with out question.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">They just adjust to what the people want with out question.</label>
+                            <input type="radio" name="q8" onClick=0 >They just adjust to what the people want with out question.</label>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>How would you feel about being lead by a all powerful king? </h2>
+                    <h2>9.How would you feel about being lead by a all powerful king? </h2>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">They just adjust to what the people want with out question.</label>
+                            <input type="radio" name="q9" onClick=0 >They just adjust to what the people want with out question.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">The government should have the power to protect itself from unrulely critisisim in a civil manor.</label>
+                            <input type="radio" name="q9" onClick=0 >The government should have the power to protect itself from unrulely critisisim in a civil manor.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">The government should silence these people swiftly.</label>
+                            <input type="radio" name="q9" onClick=0 >The government should silence these people swiftly.</label>
                     </div>
                 </div>
                 <div class="col-md-12 question">
-                    <h2>When a person speaks poorly about the government, how should it be handled?</h2>
+                    <h2>10.When a person speaks poorly about the government, how should it be handled?</h2>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">They just adjust to what the people want with out question.</label>
+                            <input type="radio" name="q10" onClick=0 >They just adjust to what the people want with out question.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">The government should have the power to protect itself from unrulely critisisim in a civil manor.</label>
+                            <input type="radio" name="q10" onClick=0 >The government should have the power to protect itself from unrulely critisisim in a civil manor.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">The government should silence these people swiftly.</label>
-                    </div>
-                </div>
-            </div>
-            <div class="row question">
-                <div class="col-md-12 question">
-                    <h2>How often do you vote &amp; is it important to you?</h2>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="radio-group">I dont vote its a waste of time.</label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="radio-group">Where I live voteing is not allowed and I am aginst that.</label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="radio-group">Where I live voteing is not allowed but I trust whos in charge.</label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="radio-group">Voteing is very important &amp; I do it often.</label>
+                            <input type="radio" name="q10" onClick=0 >The government should silence these people swiftly.</label>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
                 <div class="col-md-12 question">
-                    <h2>Which quote sounds best to you?</h2>
+                    <h2>11.How often do you vote &amp; is it important to you?</h2>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">Ask not what your country can do for you but ask what you can do for your country.</label>
+                            <input type="radio" name="q11" onClick=0 >I dont vote its a waste of time.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">People are not supose to frear there government, a givernment should fear its people.</label>
+                            <input type="radio" name="q11" onClick=0 >Where I live voteing is not allowed and I am aginst that.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">Where I live voteing is not allowed but I trust whos in charge.</label>
+                            <input type="radio" name="q11" onClick=0 >Where I live voteing is not allowed but I trust whos in charge.</label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="radio-group">Voteing is very important &amp; I do it often.</label>
+                            <input type="radio" name="q11" onClick=0 >Voteing is very important &amp; I do it often.</label>
                     </div>
                 </div>
             </div>
-            <div class="row question">
+            <div class="input-group row question">
+                <div class="col-md-12 question">
+                    <h2>12.Which quote sounds best to you?</h2>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q12" onClick=0 >Ask not what your country can do for you but ask what you can do for your country.</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q12" onClick=0 >People are not supose to frear there government, a givernment should fear its people.</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q12" onClick=0 >Where I live voteing is not allowed but I trust whos in charge.</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="q12" onClick=0 >Voteing is very important &amp; I do it often.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group row question">
                 <div class="col-md-12">
                     <div class="btn-group" role="group"></div>
                 </div>
             </div>
         </div>
         <div class="container text-right">
-            <button class="btn btn-info" type="submit">Submit test</button>
+            <input class="btn btn-info" type="button" name="submit_button" value="click" onClick="submitTestResults(this.form)"></input>
         </div>
+      </form>
     </section>
-    <section></section>
+
     <footer class="site-footer">
         <footer>
             <div class="row">

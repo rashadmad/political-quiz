@@ -1,3 +1,44 @@
+input.form-control{
+  width: 250px !important;
+  background-color: #75caeb;
+}
+
+.input-group.row.question{
+  top-margin:10px;
+  bottom-margin:10px;
+}
+
+.lead{
+  color:white;
+}
+
+.lead.center-block{
+  max-width: 400px;
+  background-color: rgba(117, 202, 235, 0.5);
+  padding: 12px;
+  text-align: justify;
+}
+
+input-placeholder {
+  color: white !important;
+}
+
+::-webkit-input-placeholder {
+   color: white !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white !important;
+}
+
+:-ms-input-placeholder {
+   color: white !important;
+}
+
 .navbar{
   margin-bottom:0;
   border:none;
@@ -333,4 +374,3 @@ div.col-md-12.question{
 
 div.row.question{
 }
-
