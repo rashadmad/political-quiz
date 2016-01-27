@@ -1,3 +1,22 @@
+h1{
+
+}
+
+h2,h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.lead{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+}
+
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+}
+
 input.form-control{
   width: 250px !important;
   background-color: #75caeb;
@@ -230,7 +249,7 @@ div.radio{
   margin-left:20px;
 }
 
-label{
+.radio{
   color:black;
 }
 
