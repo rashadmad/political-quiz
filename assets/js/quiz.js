@@ -66,25 +66,33 @@ function submitTestResults(form) {
     }
   };
 
+//creates multiple instances of objects that create
   var socialism_score = new score(socialism);
-  var soc = socialism_score.percentile();
+    var soc = socialism_score.percentile();
   var anarchy_score = new score(anarchy);
-  var ana = anarchy_score.percentile();
+    var ana = anarchy_score.percentile();
   var liberalism_score = new score(liberalism);
-  var lib = liberalism_score.percentile();
+    var lib = liberalism_score.percentile();
   var conservatism_score = new score(conservatism);
-  var con = conservatism_score.percentile();
+    var con = conservatism_score.percentile();
   var absolutism_score = new score(absolutism);
-  var abs = absolutism_score.percentile();
+    var abs = absolutism_score.percentile();
 
   var user_score = [soc, ana, lib, con, abs];
-  alert(user_score);
 
-  function dominantNsecondary(arr1){
+
+  function DominantNsecondary(arr1){
     var dominant = arr1.indexOf(Math.max(...arr1));
-    return dominant;
+    var newArray = arr1.splice(dominant,1);
+    var max = Math.max(newArray);
+    var secondary = newArray.indexOf(max);
 
-    }
-
-    alert(dominantNsecondary(user_score));
+      var domNsec = [dominant, secondary];
+      return domNsec;
   }
+
+alert(user_score);
+alert(DominantNsecondary(user_score));
+
+
+}
